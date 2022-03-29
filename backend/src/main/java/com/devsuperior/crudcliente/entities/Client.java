@@ -1,10 +1,10 @@
 package com.devsuperior.crudcliente.entities;
 
 import java.io.Serializable;
-//import java.time.Instant;
+import java.time.Instant;
 import java.util.Objects;
 
-//import javax.persistence.Column;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -22,20 +22,19 @@ public class Client implements Serializable{
 	private String name;
 	private String cpf;
 	private Double income;
-	//@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
-	//private Instant birthDate;
+	@Column(columnDefinition = "TIMESTAMP WITHOUT TIME ZONE")
+	private Instant birthDate;
 	private Integer children;
 	
 	public Client() {
 	}
 
-	//Instant birthDate = colocar no public Client
-	public Client(Long id, String name, String cpf, Double income, Integer children) {
+	public Client(Long id, String name, String cpf, Double income, Instant birthDate, Integer children) {
 		this.id = id;
 		this.name = name;
 		this.cpf = cpf;
 		this.income = income;
-		//this.birthDate = birthDate;
+		this.birthDate = birthDate;
 		this.children = children;
 	}
 
@@ -71,13 +70,13 @@ public class Client implements Serializable{
 		this.income = income;
 	}
 
-	//public Instant getBirthDate() {
-		//return birthDate;
-	//}
+	public Instant getBirthDate() {
+		return birthDate;
+	}
 
-	//public void setBirthDate(Instant birthDate) {
-		//this.birthDate = birthDate;
-	//}
+	public void setBirthDate(Instant birthDate) {
+		this.birthDate = birthDate;
+	}
 
 	public Integer getChildren() {
 		return children;

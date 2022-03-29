@@ -11,7 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.devsuperior.crudcliente.dto.ClientDTO;
 import com.devsuperior.crudcliente.services.ClientService;
-import com.devsuperior.dscatalog.dto.CategoryDTO;
 
 @RestController
 @RequestMapping(value = "/clients")

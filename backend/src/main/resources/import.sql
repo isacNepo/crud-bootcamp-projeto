@@ -26,4 +26,3 @@ INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Sara Se
 INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Joel Mieiro Freire', '12345678901', 9000.0, TIMESTAMP WITH TIME ZONE '1979-10-24T10:09:00Z', 3); 
 INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Rita Mendonça Saldanha', '12345678901', 6500.0, TIMESTAMP WITH TIME ZONE '1989-01-30T10:10:30Z', 2); 
 INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Nelsa Silva Prudente', '12345678901', 3000.0, TIMESTAMP WITH TIME ZONE '1995-01-29T10:11:00Z', 1); 
-INSERT INTO tb_client (name, cpf, income, birth_Date, children) VALUES ('Mayara Feitosa Barros', '12345678901', 5500.0, TIMESTAMP WITH TIME ZONE '1979-02-30T10:12:30Z', 2); 
